@@ -3,7 +3,7 @@
 
  
 
-1- Unzip Ipa
+1- Unzip Ipa\n
 2- Info Ipa [ App Name , Version , Bundle , MinimumOSVersion ]
 3- Change Name [ .ipa ]
 4- Change Version [ .ipa ]
