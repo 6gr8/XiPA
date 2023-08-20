@@ -157,12 +157,12 @@ int main(int argc, const char * argv[]) {
             [unzip waitUntilExit];
 
             NSString *plistpath = [tem stringByAppendingPathComponent:@"Payload/Agar.io.app/Info.plist"];
-            NSMutableDictionary *infoDictionary = [NSMutableDictionary dictionaryWithContentsOfFile:plistpath];
+            NSMutableDictionary *info = [NSMutableDictionary dictionaryWithContentsOfFile:plistpath];
             NSString *nameipa = @"NameOfIpa"; // Name For Ipa
             NSString *newbundle = @""; // Neew Bundle
-            infoDictionary[@"CFBundleShortVersionString"] = newbundle;
+            info[@"CFBundleShortVersionString"] = newbundle;
 
-            [infoDictionary writeToFile:plistpath atomically:YES];
+            [info writeToFile:plistpath atomically:YES];
 
             NSString *folderpath = @"/Users/densor/Desktop/xmc"; // Folder Path
             [fileman createDirectoryAtPath:folderpath withIntermediateDirectories:YES attributes:nil error:nil];
