@@ -18,9 +18,9 @@ int main(int argc, const char * argv[]) {
         scanf("%s", userInput);
         if (strcmp(userInput, "1") == 0) {
             printf("UNZip Ipa\n");
-            NSString *ipapath = @"/Users/kaanarslan/Downloads/instagram.ipa";
+            NSString *ipapath = @"/Users/densor/Downloads/game.ipa";
                     
-            NSString *folderpath = @"/Users/kaanarslan/Desktop/xmc";
+            NSString *folderpath = @"/Users/densor/Desktop/xmc";
                     
             BOOL done = [SSZipArchive unzipFileAtPath:ipapath toDestination:folderpath];
                     
