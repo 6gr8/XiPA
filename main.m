@@ -10,7 +10,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        printf("\033[35m[-] NotWork :( .\033[0m\n");
+        printf("\033[35m[-] Working For v1.1 :) .\033[0m\n");
         return 0;
     }
 }
